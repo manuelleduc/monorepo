@@ -14,9 +14,15 @@
     "lib"
   ],
   "scripts": {
-    "test": "node ./__tests__/back-end.test.js"
+    "start": "node ./lib/back-end.js",
+    "test": "mocha ./__tests__/back-end.test.js --exit"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "logging": "file:../../services/logging",
+    "payment": "file:../../services/payment"
+  },
+  "devDependencies": {
+    "chai-http": "^4.4.0"
   }
 }
