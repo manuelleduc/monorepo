@@ -5,7 +5,7 @@ const paymentService = {
     loggingService.info('Payment processing initiated');
     // TODO...
     loggingService.info('Payment processed successfully');
-    return `Payment of ${amount} processed successfully`;
+    return `Payment of ${amount} processed successfully!`;
   }
 }
 
