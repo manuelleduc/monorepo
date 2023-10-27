@@ -1,5 +1,3 @@
-'use strict';
-
 const loggingService = require('../lib/logging');
 
 describe('Logging Service', () => {

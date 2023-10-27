@@ -1,7 +1,11 @@
-'use strict';
+const chai = require('chai');
+const paymentService = require('../lib/payment');
 
-const payment = require('..');
-const assert = require('assert').strict;
+const expect = chai.expect;
 
-assert.strictEqual(payment(), 'Hello from payment');
-console.info('payment tests passed');
+describe('Payment Service', () => {
+  it('Should make a payment successfully', () => {
+    const paymentResult = paymentService.makePayment(100);
+    expect(paymentResult).to.equal('Payment of 100 processed successfully');
+  })
+})

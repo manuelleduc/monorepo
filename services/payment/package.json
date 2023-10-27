@@ -14,6 +14,12 @@
     "lib"
   ],
   "scripts": {
-    "test": "node ./__tests__/payment.test.js"
+    "test": "mocha ./__tests__/payment.test.js"
+  },
+  "dependencies": {
+    "logging": "file:../logging"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10"
   }
 }
