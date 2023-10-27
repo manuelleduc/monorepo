@@ -1,7 +1,9 @@
 'use strict';
 
-const logging = require('..');
-const assert = require('assert').strict;
+const loggingService = require('../lib/logging');
 
-assert.strictEqual(logging(), 'Hello from logging');
-console.info('logging tests passed');
+describe('Logging Service', () => {
+  it('should log messages', () => {
+    loggingService.info('Test log message');
+  })
+});

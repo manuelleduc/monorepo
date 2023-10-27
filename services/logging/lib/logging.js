@@ -1,7 +1,10 @@
 'use strict';
 
-module.exports = logging;
+const bunyan = require('bunyan');
 
-function logging() {
-  return 'Hello from logging';
-}
+const logger = bunyan.createLogger({
+  name: 'my-logging-service',
+  level: 'info',
+})
+
+module.exports = logger;
