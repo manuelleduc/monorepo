@@ -15,5 +15,8 @@
   ],
   "scripts": {
     "test": "node ./__tests__/logging.test.js"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.15"
   }
 }

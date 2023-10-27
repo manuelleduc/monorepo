@@ -5,7 +5,9 @@
     "packages/*",
     "services/*"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "mocha": "^10.2.0"
+  },
   "devDependencies": {
     "lerna": "^7.4.1"
   }
